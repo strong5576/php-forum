@@ -1,0 +1,9 @@
+﻿1. 無登入也可發表意見
+	若從主頁點入 「論壇」，再點入任一主題，既可發表意見，無須登入，發表的文字也可寫入資料庫，但會出現錯誤訊息
+
+	 	Notice: Undefined index: auth_user in C:\xampp\htdocs\php\case_study\case10_1\read.php on line 166
+	 	Notice: Undefined variable: user_id in C:\xampp\htdocs\php\case_study\case10_1\read.php on line 179
+	應修改程式讓未登入者可以看但無法寫（發表意見）
+
+2. login.php 執行時若瀏覽器有裝LastPass套件，會在名稱及密碼欄位自動塡入，
+   而無法顯示placeholder 所預設的內容，關掉LastPass或刪除密碼庫裡 root 帳號，既可顯示預設的內容
