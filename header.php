@@ -1,5 +1,8 @@
 <?php
-session_start();
+if(session_status() == PHP_SESSION_NONE) //檢查 session 是否已開啟
+{
+  session_start();
+}
 ?>
 <!DOCTYPE html>
 <html>
